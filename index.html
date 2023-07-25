@@ -28,6 +28,11 @@
       tailwind.config = {
         theme: {
           extend: {
+            backgroundImage: {
+              'slider-image1': "url('./images/s-1.jpg')",
+              'slider-image2': "url('./images/s-1.jpg')",
+              'slider-image3': "url('./images/s-1.jpg')",
+            },
             colors: {
               'gradient-start': '#FF8938',
               'gradient-end': '#F00',
@@ -323,9 +328,9 @@
       </div>
       <!-- leagel part end -->
       <!-- Testimoial part start -->
-      <div class="py-16">
+      <div class="py-4 md:py-16">
         <h2
-          class="text-4xl text-[#414040] font-extrabold font-ebgaramond text-center"
+          class="md:text-4xl text-[#414040] font-extrabold font-ebgaramond text-center"
         >
           What Our Client Say
         </h2>
@@ -335,10 +340,35 @@
           humour.
         </p>
         <!-- slider start -->
-        <div class="my-14">
-          <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full">
-              <img src="./images/slider-1.jpg" class="w-full" />
+        <div class="pt-10 max-w-screen-lg mx-auto">
+          <!-- ;;;;;;;;; -->
+          <div class="carousel h-[500px]">
+            <div
+              id="slide1"
+              class="carousel-item bg-slider-image1 relative w-full"
+            >
+              <div
+                class="text-white flex items-center mx-auto text-center lg:p-12"
+              >
+                <div>
+                  <span>
+                    <img
+                      class="mx-auto mb-5"
+                      src="./images/location.png"
+                      alt=""
+                    />
+                  </span>
+                  <h2 class="text-xl font-extrabold font-ebgaramond">
+                    Awlad Hossain
+                  </h2>
+                  <p class="mb-5">UIX Designer</p>
+                  <p class="w-1/2 mx-auto text-lg font-poppins">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Deleniti totam ullam quos dolores harum numquam, fugit ipsam
+                    at nemo enim.
+                  </p>
+                </div>
+              </div>
               <div
                 class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
               >
@@ -346,8 +376,34 @@
                 <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
             </div>
-            <div id="slide2" class="carousel-item relative w-full">
-              <img src="./images/slider-2.jpg" class="w-full" />
+            <!-- slide2 -->
+            <div
+              id="slide2"
+              class="carousel-item bg-slider-image2 relative w-full"
+            >
+              <!-- <img src="./images/s-1.jpg" class="w-full" /> -->
+              <div
+                class="text-white flex items-center mx-auto text-center lg:p-12"
+              >
+                <div>
+                  <span>
+                    <img
+                      class="mx-auto mb-5"
+                      src="./images/location.png"
+                      alt=""
+                    />
+                  </span>
+                  <h2 class="text-xl font-extrabold font-ebgaramond">
+                    Awlad Hossain
+                  </h2>
+                  <p class="mb-5">UIX Designer</p>
+                  <p class="w-1/2 mx-auto text-lg font-poppins">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Deleniti totam ullam quos dolores harum numquam, fugit ipsam
+                    at nemo enim.
+                  </p>
+                </div>
+              </div>
               <div
                 class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
               >
@@ -355,8 +411,34 @@
                 <a href="#slide3" class="btn btn-circle">❯</a>
               </div>
             </div>
-            <div id="slide3" class="carousel-item relative w-full">
-              <img src="./images/slider-3.jpg" class="w-full" />
+            <!-- slide3 -->
+            <div
+              id="slide3"
+              class="carousel-item bg-slider-image2 relative w-full"
+            >
+              <!-- <img src="./images/slider-3.jpg" class="w-full" /> -->
+              <div
+                class="text-white flex items-center mx-auto text-center lg:p-12"
+              >
+                <div>
+                  <span>
+                    <img
+                      class="mx-auto mb-5"
+                      src="./images/location.png"
+                      alt=""
+                    />
+                  </span>
+                  <h2 class="text-xl font-extrabold font-ebgaramond">
+                    Awlad Hossain
+                  </h2>
+                  <p class="mb-5">UIX Designer</p>
+                  <p class="w-1/2 mx-auto text-lg font-poppins">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Deleniti totam ullam quos dolores harum numquam, fugit ipsam
+                    at nemo enim.
+                  </p>
+                </div>
+              </div>
               <div
                 class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
               >
@@ -365,6 +447,7 @@
               </div>
             </div>
           </div>
+          <!-- ;;;;;;;;; -->
         </div>
         <!-- Slider end -->
       </div>
